@@ -1,5 +1,5 @@
 {
-    "name": "{{ username }}/{{ app_slug }}",
+    "name": "{{ orgname }}/{{ app_id }}",
     "type": "project",
     "license": "AGPL-2.0-or-later",
     "config": {

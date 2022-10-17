@@ -1,9 +1,14 @@
 <?xml version="1.0"?>
 <info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
-    <id>{{ app_slug }}</id>
+    <id>{{ app_id }}</id>
     <name>{{ app_name }}</name>
-    <summary>{{ summary }}</summary>
-    <description>{{ description }}<description>
+    <summary> <!-- TODO: add short summary of the app --> </summary>
+
+    <!--TODO: add description of app, use of Markdown formatting is possible here -->
+    <description><![CDATA[
+
+    ]]></description>
+
 
     <version>0.0.1</version>
 
@@ -11,8 +16,15 @@
     <author mail="{{ author_email }}">{{ author_name }}</author>
     <namespace>{{ namespace }}</namespace>
 
-    <category>files</category>
-    <bugs>https://github.com</bugs>
+    <category><!-- TODO: Add relevant category (e.g. files, flow, office, tools) -->tools</category>
+    <bugs><!-- TODO: Add bugs URL-->http://bugs</bugs>
+
+    <!--
+    TODO:   | This file was initiated with the minimal amount of details
+            | Make sure to go fill out all remaining information before publishing the app
+            |
+            | See: https://docs.nextcloud.com/server/latest/developer_manual/app_development/info.html
+    -->
 
     <dependencies>
         <nextcloud min-version="23" max-version="25"/>

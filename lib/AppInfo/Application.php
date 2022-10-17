@@ -8,7 +8,7 @@ use OCP\AppFramework\Bootstrap\IRegistrationContext;
 
 
 class Application extends App implements IBootstrap {
-	public const APPNAME = '{{ app_slug }}';
+	public const APPNAME = '{{ app_id }}';
 
 	public function __construct(array $urlParams = array()) {
 		parent::__construct(self::APPNAME, $urlParams);

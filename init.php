@@ -28,6 +28,22 @@ function to_camel_case(string $string): string {
 	return $camelString;
 }
 
+function replace_composer_json() {
+	$content = file_get_contents(__DIR__ . '/nc_composer.txt');
+	if ($content === false) {
+		echo "Error: could not read nc_composer.txt" . PHP_EOL;
+		exit();
+	}
+
+	$result = file_put_contents(__DIR__ . '/composer.json', $content);
+	if ($result === false) {
+		echo "Error: could not write to composer.json";
+		exit();
+	}
+
+	unlink(__DIR__ . '/nc_composer.txt');
+}
+
 function get_files_recursive(string $dir): array {
 	$children = scandir($dir);
 	$files = [];
@@ -149,6 +165,9 @@ function inflate_details($file, array $details) {
  * Initiation script for the Nextcloud APP
  * This script will delete itself after running.
  */
+
+// Replace composer json with template one
+replace_composer_json();
 
 // Check app ID
 prompt_validate_app_id();

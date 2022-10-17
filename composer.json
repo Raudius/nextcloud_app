@@ -1,21 +1,15 @@
 {
-    "name": "nextcloud_app",
+    "name": "raudius/nextcloud_app",
     "type": "project",
     "license": "AGPL-2.0-or-later",
-    "config": {
-        "platform": {
-            "php": "7.3"
-        }
-    },
     "autoload-dev": {
         "classmap": [ "lib/" ]
     },
     "authors": [
         {
-            "name": "{{ author_name }}",
-            "email": "{{ author_email }}"
+            "name": "Raul Ferreira Fuentes",
+            "email": "rferreirafuentes@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {}
+    "minimum-stability": "stable"
 }

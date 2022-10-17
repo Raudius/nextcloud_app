@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>{{ app_slug }}</id>
+    <name>{{ app_name }}</name>
+    <summary>{{ summary }}</summary>
+    <description>{{ description }}<description>
+
+    <version>0.0.1</version>
+
+    <licence>agpl</licence>
+    <author mail="{{ author_email }}">{{ author_name }}</author>
+    <namespace>{{ namespace }}</namespace>
+
+    <category>files</category>
+    <bugs>https://github.com</bugs>
+
+    <dependencies>
+        <nextcloud min-version="23" max-version="25"/>
+    </dependencies>
+</info>

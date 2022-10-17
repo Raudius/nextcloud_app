@@ -1,0 +1,27 @@
+{
+	"name": "{{ app_name }}",
+	"version": "0.0.1",
+	"license": "agpl",
+	"private": true,
+	"scripts": {
+		"build": "webpack --node-env production --progress",
+		"dev": "webpack --node-env development --progress",
+		"watch": "webpack --node-env development --progress --watch",
+		"serve": "webpack --node-env development serve --progress",
+		"lint": "eslint --ext .ts,.vue src",
+		"lint:fix": "eslint --ext .ts,.vue src --fix",
+		"stylelint": "stylelint css/*.css css/*.scss src/**/*.scss src/**/*.vue",
+		"stylelint:fix": "stylelint css/*.css css/*.scss src/**/*.scss src/**/*.vue --fix"
+	},
+	"dependencies": {
+	},
+	"browserslist": [
+		"extends @nextcloud/browserslist-config"
+	],
+	"engines": {
+		"node": "^14.0.0",
+		"npm": "^7.0.0"
+	},
+	"devDependencies": {
+	}
+}

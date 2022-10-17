@@ -1,5 +1,5 @@
 <?php
-namespace OCA\Richdocuments\AppInfo;
+namespace OCA\{{ namespace }}\AppInfo;
 
 use OCP\AppFramework\App;
 use OCP\AppFramework\Bootstrap\IBootContext;
@@ -8,10 +8,10 @@ use OCP\AppFramework\Bootstrap\IRegistrationContext;
 
 
 class Application extends App implements IBootstrap {
-	public const APPNAME = '{{ app_id }}';
+	public const APP_ID = '{{ app_id }}';
 
 	public function __construct(array $urlParams = array()) {
-		parent::__construct(self::APPNAME, $urlParams);
+		parent::__construct(self::APP_ID, $urlParams);
 	}
 
 	/**

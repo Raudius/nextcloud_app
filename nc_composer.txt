@@ -1,5 +1,5 @@
 {
-    "name": "{{ app_name }}",
+    "name": "{{ orgname }}/{{ app_id }}",
     "type": "project",
     "license": "AGPL-2.0-or-later",
     "config": {
@@ -17,5 +17,15 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^9.3.11",
+        "friendsofphp/php-cs-fixer": "^3.11"
+    },
+    "scripts": {
+        "lint": "find . -name \\*.php -not -path './vendor/*' -not -path './build/*' -print0 | xargs -0 -n1 php -l",
+        "cs:check": "php-cs-fixer fix --dry-run --diff",
+        "cs:fix": "php-cs-fixer fix",
+        "test:unit": "phpunit -c tests/phpunit.xml"
+    }
 }

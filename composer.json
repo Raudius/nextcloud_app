@@ -1,0 +1,21 @@
+{
+    "name": "nextcloud_app",
+    "type": "project",
+    "license": "AGPL-2.0-or-later",
+    "config": {
+        "platform": {
+            "php": "7.3"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [ "lib/" ]
+    },
+    "authors": [
+        {
+            "name": "{{ author_name }}",
+            "email": "{{ author_email }}"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

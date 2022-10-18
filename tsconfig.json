@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "./js",
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "module": "esnext",
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": false
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ]
+}

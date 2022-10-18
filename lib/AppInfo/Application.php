@@ -1,6 +1,7 @@
 <?php
 namespace OCA\{{ namespace }}\AppInfo;
 
+use OCA\{{ namespace }}\Listeners\LoadAdditionalScriptsListener;
 use OCP\AppFramework\App;
 use OCP\AppFramework\Bootstrap\IBootContext;
 use OCP\AppFramework\Bootstrap\IBootstrap;

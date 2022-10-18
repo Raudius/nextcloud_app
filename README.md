@@ -1,3 +1,10 @@
+# Nextcloud App Starter
+Startup project for Nextcloud app development. 
+
+The project comes with a simple "hello world" modal on every page load. Annoying, I know.
+
+## Set-up
+
 1. `cd` into the `apps` directory of your development Nextcloud
 ```shell
 # Location may vary, some examples:
@@ -20,3 +27,37 @@ php init.php
 ```
 
 4. Go through the init script steps and Bob's your uncle.
+
+
+## Front-end (Typescript + Vue)
+
+The project comes with all the required config files to start developing in Typescript using the Vue framework.
+
+```shell
+npm install    # Make sure you install dependencies 
+
+npm run dev    # Compiles development build
+npm run watch  # Auto-compiles for development when changes are detected
+npm run build  # Compiles production build
+```
+
+## Unit testing
+
+The project comes with PHPUnit set up. Just create a filein `test/unit` that ends in `Test`. An example one is already included.
+
+```shell
+composer install        # Make sure you install dependencies 
+composer run test:unit  # Run the PHPUnit test suite
+```
+
+## Linters (cs-fixer + eslint)
+
+```shell
+composer run cs:check  # Check syntax
+composer run cs:fix    # Fix syntax
+```
+
+```shell
+npm run lint     # Check syntax
+npm run lint:fix # Fix syntax
+```

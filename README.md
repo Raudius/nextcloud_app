@@ -1,7 +1,7 @@
 # Nextcloud App Starter
 Startup project for Nextcloud app development. 
 
-The project comes with a simple "hello world" modal on every page load. Annoying, I know.
+The project comes with a simple "hello world" modal which shows every page load for some apps (such as the Files app). Annoying, I know.
 
 ## Set-up
 

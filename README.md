@@ -31,7 +31,7 @@ php init.php
 
 ## Front-end (Typescript + Vue)
 
-The project comes with all the required config files to start developing in Typescript using the Vue framework.
+The project comes with all the required config files to start developing in Typescript using the Vue framework. Nextcloud's vue components library is also included, so they are directly available after set-up.
 
 ```shell
 npm install    # Make sure you install dependencies 
